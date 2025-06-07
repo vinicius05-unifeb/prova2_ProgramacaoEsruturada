@@ -1,0 +1,60 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Vinicius\\source\\repos\\prova2_ProgramacaoEsruturada\\prova2_Programa\u00E7\u00E3oEstruturada\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E3555CC8-BA87-450C-B803-442C7D17CA8C}|prova2_Programa\u00E7\u00E3oEstruturada\\prova2_Programa\u00E7\u00E3oEstruturada.csproj|c:\\users\\vinicius\\source\\repos\\prova2_programacaoesruturada\\prova2_programa\u00E7\u00E3oestruturada\\prova2_programa\u00E7\u00E3oestruturada\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E3555CC8-BA87-450C-B803-442C7D17CA8C}|prova2_Programa\u00E7\u00E3oEstruturada\\prova2_Programa\u00E7\u00E3oEstruturada.csproj|solutionrelative:prova2_programa\u00E7\u00E3oestruturada\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3555CC8-BA87-450C-B803-442C7D17CA8C}|prova2_Programa\u00E7\u00E3oEstruturada\\prova2_Programa\u00E7\u00E3oEstruturada.csproj|c:\\users\\vinicius\\source\\repos\\prova2_programacaoesruturada\\prova2_programa\u00E7\u00E3oestruturada\\prova2_programa\u00E7\u00E3oestruturada\\frmmenus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E3555CC8-BA87-450C-B803-442C7D17CA8C}|prova2_Programa\u00E7\u00E3oEstruturada\\prova2_Programa\u00E7\u00E3oEstruturada.csproj|solutionrelative:prova2_programa\u00E7\u00E3oestruturada\\frmmenus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 133,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmMenus.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Vinicius\\source\\repos\\prova2_ProgramacaoEsruturada\\prova2_Programa\u00E7\u00E3oEstruturada\\prova2_Programa\u00E7\u00E3oEstruturada\\frmMenus.cs",
+              "RelativeDocumentMoniker": "prova2_Programa\u00E7\u00E3oEstruturada\\frmMenus.cs",
+              "ToolTip": "C:\\Users\\Vinicius\\source\\repos\\prova2_ProgramacaoEsruturada\\prova2_Programa\u00E7\u00E3oEstruturada\\prova2_Programa\u00E7\u00E3oEstruturada\\frmMenus.cs [Projeto]",
+              "RelativeToolTip": "prova2_Programa\u00E7\u00E3oEstruturada\\frmMenus.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T14:23:15.274Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Vinicius\\source\\repos\\prova2_ProgramacaoEsruturada\\prova2_Programa\u00E7\u00E3oEstruturada\\prova2_Programa\u00E7\u00E3oEstruturada\\Form1.cs",
+              "RelativeDocumentMoniker": "prova2_Programa\u00E7\u00E3oEstruturada\\Form1.cs",
+              "ToolTip": "C:\\Users\\Vinicius\\source\\repos\\prova2_ProgramacaoEsruturada\\prova2_Programa\u00E7\u00E3oEstruturada\\prova2_Programa\u00E7\u00E3oEstruturada\\Form1.cs [Projeto]",
+              "RelativeToolTip": "prova2_Programa\u00E7\u00E3oEstruturada\\Form1.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T23:55:11.427Z",
+              "EditorCaption": " [Projeto]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
