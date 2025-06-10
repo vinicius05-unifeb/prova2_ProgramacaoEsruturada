@@ -1,6 +1,9 @@
-﻿namespace prova2_ProgramaçãoEstruturada
+﻿using System.Windows.Forms;
+using System.Drawing;
+using System;
+namespace prova2_ProgramaçãoEstruturada
 {
-    partial class Form1
+    partial class frmLogin
     {
         /// <summary>
         ///  Required designer variable.
@@ -37,14 +40,14 @@
             // 
             // txtUsuario
             // 
-            txtUsuario.Location = new Point(287, 108);
+            txtUsuario.Location = new Point(87, 87);
             txtUsuario.Name = "txtUsuario";
             txtUsuario.Size = new Size(227, 27);
             txtUsuario.TabIndex = 0;
             // 
             // txtSenha
             // 
-            txtSenha.Location = new Point(287, 190);
+            txtSenha.Location = new Point(87, 169);
             txtSenha.Name = "txtSenha";
             txtSenha.Size = new Size(227, 27);
             txtSenha.TabIndex = 1;
@@ -52,7 +55,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(287, 85);
+            label1.Location = new Point(87, 64);
             label1.Name = "label1";
             label1.Size = new Size(59, 20);
             label1.TabIndex = 2;
@@ -61,7 +64,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(287, 167);
+            label2.Location = new Point(87, 146);
             label2.Name = "label2";
             label2.Size = new Size(49, 20);
             label2.TabIndex = 3;
@@ -69,24 +72,25 @@
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(352, 293);
+            btnLogin.Location = new Point(155, 257);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(94, 29);
             btnLogin.TabIndex = 4;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
             // 
-            // Form1
+            // frmLogin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(404, 375);
             Controls.Add(btnLogin);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(txtSenha);
             Controls.Add(txtUsuario);
-            Name = "Form1";
+            Name = "frmLogin";
             Text = "frmLogin";
             ResumeLayout(false);
             PerformLayout();

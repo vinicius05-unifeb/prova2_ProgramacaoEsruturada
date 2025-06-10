@@ -30,13 +30,13 @@
         {
             menuStrip1 = new MenuStrip();
             cadastrToolStripMenuItem = new ToolStripMenuItem();
+            toolStrip_Abrir_cadastroCliente = new ToolStripMenuItem();
             cadastroDeProdutosToolStripMenuItem = new ToolStripMenuItem();
+            toolStrip_Abrir_cadastroProdutos = new ToolStripMenuItem();
             cadastroDePedidosToolStripMenuItem = new ToolStripMenuItem();
+            toolStrip_Abrir_cadastroPedidos = new ToolStripMenuItem();
             cadastroDeUsuáriosToolStripMenuItem = new ToolStripMenuItem();
-            abrirToolStripMenuItem = new ToolStripMenuItem();
-            abrirToolStripMenuItem1 = new ToolStripMenuItem();
-            abrirToolStripMenuItem2 = new ToolStripMenuItem();
-            abrirToolStripMenuItem3 = new ToolStripMenuItem();
+            toolStrip_Abrir_cadastroUsuarios = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -52,55 +52,59 @@
             // 
             // cadastrToolStripMenuItem
             // 
-            cadastrToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { abrirToolStripMenuItem });
+            cadastrToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { toolStrip_Abrir_cadastroCliente });
             cadastrToolStripMenuItem.Name = "cadastrToolStripMenuItem";
             cadastrToolStripMenuItem.Size = new Size(157, 24);
             cadastrToolStripMenuItem.Text = "Cadastro de clientes";
             // 
+            // toolStrip_Abrir_cadastroCliente
+            // 
+            toolStrip_Abrir_cadastroCliente.Name = "toolStrip_Abrir_cadastroCliente";
+            toolStrip_Abrir_cadastroCliente.Size = new Size(125, 26);
+            toolStrip_Abrir_cadastroCliente.Text = "Abrir";
+            toolStrip_Abrir_cadastroCliente.Click += toolStrip_Abrir_cadastroCliente_Click;
+            // 
             // cadastroDeProdutosToolStripMenuItem
             // 
-            cadastroDeProdutosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { abrirToolStripMenuItem1 });
+            cadastroDeProdutosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { toolStrip_Abrir_cadastroProdutos });
             cadastroDeProdutosToolStripMenuItem.Name = "cadastroDeProdutosToolStripMenuItem";
             cadastroDeProdutosToolStripMenuItem.Size = new Size(167, 24);
             cadastroDeProdutosToolStripMenuItem.Text = "Cadastro de produtos";
             // 
+            // toolStrip_Abrir_cadastroProdutos
+            // 
+            toolStrip_Abrir_cadastroProdutos.Name = "toolStrip_Abrir_cadastroProdutos";
+            toolStrip_Abrir_cadastroProdutos.Size = new Size(125, 26);
+            toolStrip_Abrir_cadastroProdutos.Text = "Abrir";
+            toolStrip_Abrir_cadastroProdutos.Click += toolStrip_Abrir_cadastroProdutos_Click;
+            // 
             // cadastroDePedidosToolStripMenuItem
             // 
-            cadastroDePedidosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { abrirToolStripMenuItem2 });
+            cadastroDePedidosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { toolStrip_Abrir_cadastroPedidos });
             cadastroDePedidosToolStripMenuItem.Name = "cadastroDePedidosToolStripMenuItem";
             cadastroDePedidosToolStripMenuItem.Size = new Size(161, 24);
             cadastroDePedidosToolStripMenuItem.Text = "Cadastro de pedidos";
             // 
+            // toolStrip_Abrir_cadastroPedidos
+            // 
+            toolStrip_Abrir_cadastroPedidos.Name = "toolStrip_Abrir_cadastroPedidos";
+            toolStrip_Abrir_cadastroPedidos.Size = new Size(224, 26);
+            toolStrip_Abrir_cadastroPedidos.Text = "Abrir";
+            toolStrip_Abrir_cadastroPedidos.Click += toolStrip_Abrir_cadastroPedidos_Click;
+            // 
             // cadastroDeUsuáriosToolStripMenuItem
             // 
-            cadastroDeUsuáriosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { abrirToolStripMenuItem3 });
+            cadastroDeUsuáriosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { toolStrip_Abrir_cadastroUsuarios });
             cadastroDeUsuáriosToolStripMenuItem.Name = "cadastroDeUsuáriosToolStripMenuItem";
             cadastroDeUsuáriosToolStripMenuItem.Size = new Size(161, 24);
             cadastroDeUsuáriosToolStripMenuItem.Text = "Cadastro de usuários";
             // 
-            // abrirToolStripMenuItem
+            // toolStrip_Abrir_cadastroUsuarios
             // 
-            abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            abrirToolStripMenuItem.Size = new Size(224, 26);
-            abrirToolStripMenuItem.Text = "Abrir";
-            // 
-            // abrirToolStripMenuItem1
-            // 
-            abrirToolStripMenuItem1.Name = "abrirToolStripMenuItem1";
-            abrirToolStripMenuItem1.Size = new Size(224, 26);
-            abrirToolStripMenuItem1.Text = "Abrir";
-            // 
-            // abrirToolStripMenuItem2
-            // 
-            abrirToolStripMenuItem2.Name = "abrirToolStripMenuItem2";
-            abrirToolStripMenuItem2.Size = new Size(224, 26);
-            abrirToolStripMenuItem2.Text = "Abrir";
-            // 
-            // abrirToolStripMenuItem3
-            // 
-            abrirToolStripMenuItem3.Name = "abrirToolStripMenuItem3";
-            abrirToolStripMenuItem3.Size = new Size(224, 26);
-            abrirToolStripMenuItem3.Text = "Abrir";
+            toolStrip_Abrir_cadastroUsuarios.Name = "toolStrip_Abrir_cadastroUsuarios";
+            toolStrip_Abrir_cadastroUsuarios.Size = new Size(224, 26);
+            toolStrip_Abrir_cadastroUsuarios.Text = "Abrir";
+            toolStrip_Abrir_cadastroUsuarios.Click += toolStrip_Abrir_cadastroUsuarios_Click;
             // 
             // frmMenus
             // 
@@ -120,12 +124,12 @@
 
         private MenuStrip menuStrip1;
         private ToolStripMenuItem cadastrToolStripMenuItem;
-        private ToolStripMenuItem abrirToolStripMenuItem;
+        private ToolStripMenuItem toolStrip_Abrir_cadastroCliente;
         private ToolStripMenuItem cadastroDeProdutosToolStripMenuItem;
-        private ToolStripMenuItem abrirToolStripMenuItem1;
+        private ToolStripMenuItem toolStrip_Abrir_cadastroProdutos;
         private ToolStripMenuItem cadastroDePedidosToolStripMenuItem;
-        private ToolStripMenuItem abrirToolStripMenuItem2;
+        private ToolStripMenuItem toolStrip_Abrir_cadastroPedidos;
         private ToolStripMenuItem cadastroDeUsuáriosToolStripMenuItem;
-        private ToolStripMenuItem abrirToolStripMenuItem3;
+        private ToolStripMenuItem toolStrip_Abrir_cadastroUsuarios;
     }
 }

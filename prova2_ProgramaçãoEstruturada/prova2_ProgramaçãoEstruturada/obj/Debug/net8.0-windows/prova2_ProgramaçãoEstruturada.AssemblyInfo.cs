@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("prova2_ProgramaçãoEstruturada")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98d81536ff783e46ecfcf0b07935229397ae2f5e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6c9314ef8baf36c2c84cc9b2d895a8f75197daa")]
 [assembly: System.Reflection.AssemblyProductAttribute("prova2_ProgramaçãoEstruturada")]
 [assembly: System.Reflection.AssemblyTitleAttribute("prova2_ProgramaçãoEstruturada")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
