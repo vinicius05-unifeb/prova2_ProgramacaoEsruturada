@@ -92,6 +92,7 @@ namespace prova2_ProgramaçãoEstruturada
             Controls.Add(txtUsuario);
             Name = "frmLogin";
             Text = "frmLogin";
+            Load += frmLogin_Load;
             ResumeLayout(false);
             PerformLayout();
         }

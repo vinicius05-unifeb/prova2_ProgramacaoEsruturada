@@ -13,6 +13,7 @@ namespace prova2_ProgramaçãoEstruturada
 {
     public partial class frmCadastro_de_clientes : Form
     {
+        private static readonly HttpClient cliente = new HttpClient();
         private string linkCsv = "C:/Users/Vinicius/source/repos/prova2_ProgramacaoEsruturada/prova2_ProgramaçãoEstruturada/prova2_ProgramaçãoEstruturada/clientes.csv";
         private int edicao = -1;
         public frmCadastro_de_clientes()
@@ -25,11 +26,16 @@ namespace prova2_ProgramaçãoEstruturada
             string nome = txtNome.Text.Trim();
             string cpf = txtCPF.Text.Trim();
             string email = txtEmail.Text.Trim();
-            string endereco = txtEndereço.Text.Trim();
+            string cep = txtEndereço.Text.Trim();
+            string logradouro = txtLogradouro.Text.Trim();
+            string numero = txtNumero.Text.Trim();
+            string bairro = txtBairro.Text.Trim();
+            string cidade = txtCidade.Text.Trim();
+            string estado = txtEstado.Text.Trim();
             string telefone = txtTelefone.Text.Trim();
             string whatsapp = txtWhatsapp.Text.Trim();
 
-            if (string.IsNullOrWhiteSpace(nome) || string.IsNullOrWhiteSpace(cpf) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(endereco) || string.IsNullOrWhiteSpace(telefone) || string.IsNullOrWhiteSpace(whatsapp))
+            if (string.IsNullOrWhiteSpace(nome) || string.IsNullOrWhiteSpace(cpf) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(cep) || string.IsNullOrWhiteSpace(telefone) || string.IsNullOrWhiteSpace(whatsapp))
             {
                 MessageBox.Show("Todos os campos devem estar preenchidos.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -43,11 +49,11 @@ namespace prova2_ProgramaçãoEstruturada
                     MessageBox.Show("CPF já cadastrado", "Tente outro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                linhas.Add($"{nome},{cpf},{email},{endereco},{telefone},{whatsapp}");
+                linhas.Add($"{nome},{cpf},{email},{logradouro},{numero},{bairro},{cidade},{estado},{telefone},{whatsapp}");
             }
             else
             {
-                linhas[edicao + 1] = $"{nome},{cpf},{email},{endereco},{telefone},{whatsapp}";
+                linhas[edicao + 1] = $"{nome},{cpf},{email},{logradouro},{numero},{bairro},{cidade},{estado},{telefone},{whatsapp}";
                 edicao = -1;
             }
             File.WriteAllLines(linkCsv, linhas);
@@ -124,9 +130,13 @@ namespace prova2_ProgramaçãoEstruturada
                 txtNome.Text = dgvClientes.Rows[e.RowIndex].Cells[0].Value.ToString();
                 txtCPF.Text = dgvClientes.Rows[e.RowIndex].Cells[1].Value.ToString();
                 txtEmail.Text = dgvClientes.Rows[e.RowIndex].Cells[2].Value.ToString();
-                txtEndereço.Text = dgvClientes.Rows[e.RowIndex].Cells[3].Value.ToString();
-                txtTelefone.Text = dgvClientes.Rows[e.RowIndex].Cells[4].Value.ToString();
-                txtWhatsapp.Text = dgvClientes.Rows[e.RowIndex].Cells[5].Value.ToString();
+                txtLogradouro.Text = dgvClientes.Rows[e.RowIndex].Cells[3].Value.ToString();
+                txtNumero.Text = dgvClientes.Rows[e.RowIndex].Cells[4].Value.ToString();
+                txtBairro.Text = dgvClientes.Rows[e.RowIndex].Cells[5].Value.ToString();
+                txtCidade.Text = dgvClientes.Rows[e.RowIndex].Cells[6].Value.ToString();
+                txtEstado.Text = dgvClientes.Rows[e.RowIndex].Cells[7].Value.ToString();
+                txtTelefone.Text = dgvClientes.Rows[e.RowIndex].Cells[8].Value.ToString();
+                txtWhatsapp.Text = dgvClientes.Rows[e.RowIndex].Cells[9].Value.ToString();
 
                 edicao = e.RowIndex;
                 btnAdicionar.Text = "Editar";
@@ -144,11 +154,15 @@ namespace prova2_ProgramaçãoEstruturada
             int rowIndex = dgvClientes.SelectedRows[0].Index;
             var linhas = File.ReadAllLines(linkCsv).ToList();
 
-            linhas.RemoveAt(rowIndex + 1); 
+            linhas.RemoveAt(rowIndex + 1);
             File.WriteAllLines(linkCsv, linhas);
             MessageBox.Show("Registro excluído.", "Excluído", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             Visualizar_Csv_In_DataGrid();
+        } 
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
